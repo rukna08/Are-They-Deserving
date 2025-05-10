@@ -1,0 +1,6 @@
+Pollution:50;
+Toxic Environment:50;
+Warlike:70;
+Liquid Nitrogen Ocean:200;
+Tech Level Low:300;
+Surface Area Large:300;
