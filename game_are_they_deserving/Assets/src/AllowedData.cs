@@ -20,7 +20,6 @@ public class AllowedData : MonoBehaviour {
         string line;
         StreamReader reader = new StreamReader(path);
         while((line = reader.ReadLine()) != null) {
-            Debug.Log(line);
             allowed_data_text.text += line;
             allowed_data_text.text += "\n";
         }
