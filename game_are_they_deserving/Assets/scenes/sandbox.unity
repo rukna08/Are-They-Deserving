@@ -534,6 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: 
+  allowed_data_text: {fileID: 1511355392}
 --- !u!1 &2105108021
 GameObject:
   m_ObjectHideFlags: 0
