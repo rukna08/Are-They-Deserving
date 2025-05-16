@@ -15,6 +15,16 @@ for i in range(len(rules)):
     else:
         not_allowed.append(rules[i])
 
+allowed_values = []
+not_allowed_values = []
+
+for i in range(len(allowed)):
+    allowed_values.append(random.randint(10, 100))
+    allowed[i] += ":" + str(allowed_values[i]) + ";"
+for i in range(len(not_allowed)):
+    not_allowed_values.append(random.randint(10, 100))
+    not_allowed[i] += ":" + str(not_allowed_values[i]) + ";"
+
 
 if debug == 1:
     print("RULES:")
