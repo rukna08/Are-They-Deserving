@@ -1,4 +1,6 @@
-Peaceful
-Oxygen Environment
-Oxygen Based Life
-Water Ocean
+Pollution:77;
+Toxic Environment:31;
+Surface Area Large:55;
+Peaceful:57;
+Oxygen Environment:92;
+Water Ocean:42;

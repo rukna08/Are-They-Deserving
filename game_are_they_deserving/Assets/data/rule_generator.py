@@ -44,3 +44,10 @@ if debug == 1:
     for i in range(len(not_allowed)):
         print(not_allowed[i])
     print("\n")
+
+with open("allowed.txt", "w") as allowed_file:
+    for line in allowed:
+        allowed_file.write(f"{line}\n")
+with open("not_allowed.txt", "w") as not_allowed_file:
+    for line in not_allowed:
+        not_allowed_file.write(f"{line}\n")
