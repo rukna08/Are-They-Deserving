@@ -1,4 +1,4 @@
-Peaceful:100;
-Oxygen Environment:70;
-Oxygen Based Life:200;
-Water Ocean:200;
+Peaceful
+Oxygen Environment
+Oxygen Based Life
+Water Ocean
