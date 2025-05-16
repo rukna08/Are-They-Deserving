@@ -1,3 +1,4 @@
+import os
 import random
 
 debug = 1
@@ -27,14 +28,19 @@ for i in range(len(not_allowed)):
 
 
 if debug == 1:
+    os.system("cls")
+
     print("RULES:")
-    print(rules)
+    for i in range(len(rules)):
+        print(rules[i])
     print("\n")
 
     print("ALLOWED:")
-    print(allowed)
+    for i in range(len(allowed)):
+        print(allowed[i])
     print("\n")
     
     print("NOT ALLOWED:")
-    print(not_allowed)
+    for i in range(len(not_allowed)):
+        print(not_allowed[i])
     print("\n")
