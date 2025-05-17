@@ -218,8 +218,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 554585957}
-  - {fileID: 274196326}
   - {fileID: 390224264}
+  - {fileID: 274196326}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -970,7 +970,6 @@ GameObject:
   - component: {fileID: 1051558591}
   - component: {fileID: 1051558594}
   - component: {fileID: 1051558593}
-  - component: {fileID: 1051558592}
   m_Layer: 5
   m_Name: Planet Data
   m_TagString: Untagged
@@ -997,20 +996,6 @@ RectTransform:
   m_AnchoredPosition: {x: 6.264038, y: -16.923584}
   m_SizeDelta: {x: -15.5, y: -51.848755}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1051558592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1051558590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 322b3faaba4bce64c8c04f8cc4db217a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  path: 
-  allowed_data_text: {fileID: 1051558593}
 --- !u!114 &1051558593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1120,6 +1105,7 @@ GameObject:
   - component: {fileID: 1099617696}
   - component: {fileID: 1099617695}
   - component: {fileID: 1099617694}
+  - component: {fileID: 1099617697}
   m_Layer: 5
   m_Name: Planet Button
   m_TagString: Untagged
@@ -1190,7 +1176,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1099617695}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1099617697}
+        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
+        m_MethodName: enable_planet_ui
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1099617695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,6 +1227,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099617692}
   m_CullTransparentMesh: 1
+--- !u!114 &1099617697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099617692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83dcfa1a00cec994984946872950bfb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manuscript_ui: {fileID: 554585956}
+  planet_ui: {fileID: 390224263}
 --- !u!1 &1511355390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1402,7 @@ GameObject:
   - component: {fileID: 1731574694}
   - component: {fileID: 1731574693}
   - component: {fileID: 1731574692}
+  - component: {fileID: 1731574695}
   m_Layer: 5
   m_Name: Manuscript Button
   m_TagString: Untagged
@@ -1460,7 +1473,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1731574693}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1731574695}
+        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
+        m_MethodName: enable_manuscript_ui
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1731574693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1499,6 +1524,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731574690}
   m_CullTransparentMesh: 1
+--- !u!114 &1731574695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731574690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83dcfa1a00cec994984946872950bfb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manuscript_ui: {fileID: 554585956}
+  planet_ui: {fileID: 390224263}
 --- !u!1 &1755864354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,7 +1840,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85600007}
   m_AnchorMax: {x: 0.35779285, y: 1}
-  m_AnchoredPosition: {x: 9.367859, y: -6.8742676}
+  m_AnchoredPosition: {x: 9.367493, y: -6.8742676}
   m_SizeDelta: {x: -9.36525, y: -3.5494995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105108023
