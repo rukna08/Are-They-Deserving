@@ -53,11 +53,13 @@ public class AllowedData : MonoBehaviour {
 
             }
             allowed_data_array_value_integer = Int32.Parse(allowed_data_array_value_string);
-
             allowed_data_array.Add(allowed_data_array_key_string, allowed_data_array_value_integer);
         }
 
-        //foreach(var keyValuePair in allowed_data_array)
-        //    Debug.Log($"Key is: {keyValuePair.Key}, Value is: {keyValuePair.Value}");
+        Debug.Log("ALLOWED DATA");
+
+        foreach (var keyValuePair in allowed_data_array) { 
+            Debug.Log($"Key is: {keyValuePair.Key}, Value is: {keyValuePair.Value}");
+        }
     }
 }
