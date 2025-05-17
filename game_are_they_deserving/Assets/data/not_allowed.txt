@@ -1,6 +1,7 @@
-Pollution:77;
-Toxic Environment:31;
-Surface Area Large:55;
-Peaceful:57;
-Oxygen Environment:92;
-Water Ocean:42;
+Warlike:84;
+Liquid Nitrogen Ocean:29;
+Surface Area Large:95;
+Peaceful:88;
+Oxygen Environment:18;
+Oxygen Based Life:10;
+Water Ocean:15;

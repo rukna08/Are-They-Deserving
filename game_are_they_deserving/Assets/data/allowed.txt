@@ -1,4 +1,3 @@
-Warlike:51;
-Liquid Nitrogen Ocean:55;
-Tech Level Low:100;
-Oxygen Based Life:57;
+Pollution:82;
+Toxic Environment:39;
+Tech Level Low:57;
