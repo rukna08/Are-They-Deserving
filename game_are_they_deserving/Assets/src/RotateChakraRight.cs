@@ -12,6 +12,18 @@ public class RotateChakraRight : MonoBehaviour {
 
     RaycastHit2D hit;
 
+    BoxCollider2D collider;
+
+    void Start() {
+        collider = GetComponent<BoxCollider2D>();
+    }
+
+    void OnEnable() {
+        if (collider == null) {
+            collider = GetComponent<BoxCollider2D>();
+        }
+    }
+
     void Update() {
         hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         
@@ -35,16 +47,17 @@ public class RotateChakraRight : MonoBehaviour {
                 }
             }
         }
+
     
     }
 
     IEnumerator rotate_right() {
+        collider.enabled = false;
         while (rotation_amount != -181f) {
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, rotation_amount, transform.eulerAngles.z);
             rotation_amount -= 1.0f;    
             yield return null;
         }
-        Debug.Log("Moved Right");
         yield return new WaitForSeconds(1f);
         StartCoroutine(rotate_left());
         ray_has_started_right_rotation = false;
@@ -56,6 +69,6 @@ public class RotateChakraRight : MonoBehaviour {
             rotation_amount += 1.0f;
             yield return null;
         }
-        Debug.Log("Moved Left");
+        collider.enabled = true;
     }
 }
