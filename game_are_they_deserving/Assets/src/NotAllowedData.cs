@@ -24,8 +24,6 @@ public class NotAllowedData : MonoBehaviour {
         string line;
         StreamReader reader = new StreamReader(path);
         while((line = reader.ReadLine()) != null) {
-            not_allowed_data_text.text += line;
-            not_allowed_data_text.text += "\n";
 
             string not_allowed_data_array_key_string = "";
             foreach(char c in line) {
@@ -55,12 +53,14 @@ public class NotAllowedData : MonoBehaviour {
 
             not_allowed_data_array_value_integer = Int32.Parse(not_allowed_data_array_value_string);
             not_allowed_data_array.Add(not_allowed_data_array_key_string, not_allowed_data_array_value_integer);
-            
-            Debug.Log("NOT ALLOWED DATA");
+        }
 
-            foreach(var keyValuePair in not_allowed_data_array) {
-                Debug.Log($"Key is: {keyValuePair.Key}, Value is: {keyValuePair.Value}");
-            }
+        Debug.Log("NOT ALLOWED DATA");
+
+        foreach(var kvp in not_allowed_data_array) {
+            string l = kvp.Key + ": " + kvp.Value;
+            not_allowed_data_text.text += l;
+            not_allowed_data_text.text += "\n";
         }
     }
 

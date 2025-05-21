@@ -24,9 +24,6 @@ public class AllowedData : MonoBehaviour {
         string line;
         StreamReader reader = new StreamReader(path);
         while((line = reader.ReadLine()) != null) {
-            allowed_data_text.text += line;
-            allowed_data_text.text += "\n";
-
             string allowed_data_array_key_string = "";
             foreach(char c in line) {
                 if (c == ':') {
@@ -58,8 +55,10 @@ public class AllowedData : MonoBehaviour {
 
         Debug.Log("ALLOWED DATA");
 
-        foreach (var keyValuePair in allowed_data_array) { 
-            Debug.Log($"Key is: {keyValuePair.Key}, Value is: {keyValuePair.Value}");
+        foreach (var kvp in allowed_data_array) {
+            string l = kvp.Key + ": " + kvp.Value; // 3 TABS between key and value.
+            allowed_data_text.text += l;
+            allowed_data_text.text += "\n";
         }
     }
 }
