@@ -506,7 +506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85600007}
   m_AnchorMax: {x: 0.35779285, y: 1}
-  m_AnchoredPosition: {x: 9.663055, y: -6.2719727}
+  m_AnchoredPosition: {x: 9.662964, y: -6.2719727}
   m_SizeDelta: {x: -10.807159, y: -3.4559937}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566529886
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278237951
-  m_fontColor: {r: 1, g: 0.7279428, b: 0, a: 1}
+  m_fontColor: {r: 0.24705882, g: 0.39607844, b: 0.5647059, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278237951
-  m_fontColor: {r: 1, g: 0.7279428, b: 0, a: 1}
+  m_fontColor: {r: 0.24705882, g: 0.39607844, b: 0.5647059, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1253,6 +1253,7 @@ GameObject:
   - component: {fileID: 1511355393}
   - component: {fileID: 1511355392}
   - component: {fileID: 1511355394}
+  - component: {fileID: 1511355395}
   m_Layer: 5
   m_Name: Allowed Data
   m_TagString: Untagged
@@ -1390,6 +1391,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: 
   allowed_data_text: {fileID: 1511355392}
+--- !u!114 &1511355395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511355390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677e5242a1958fb4c8421da3bdce2268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1731574690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,7 +1853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85600007}
   m_AnchorMax: {x: 0.35779285, y: 1}
-  m_AnchoredPosition: {x: 9.367249, y: -6.8742676}
+  m_AnchoredPosition: {x: 9.366882, y: -6.8742676}
   m_SizeDelta: {x: -9.36525, y: -3.5494995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105108023

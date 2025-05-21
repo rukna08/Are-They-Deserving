@@ -55,8 +55,6 @@ public class NotAllowedData : MonoBehaviour {
             not_allowed_data_array.Add(not_allowed_data_array_key_string, not_allowed_data_array_value_integer);
         }
 
-        Debug.Log("NOT ALLOWED DATA");
-
         foreach(var kvp in not_allowed_data_array) {
             string l = kvp.Key + ": " + kvp.Value;
             not_allowed_data_text.text += l;

@@ -1,5 +1,5 @@
-Pollution:16;
-Toxic Environment:83;
-Surface Area Large:41;
-Peaceful:82;
-Water Ocean:55;
+Pollution:69;
+Toxic Environment:66;
+Desert Biome:40;
+Tundra Biome:48;
+Ice Sheet Biome:53;

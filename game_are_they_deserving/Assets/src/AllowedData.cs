@@ -53,8 +53,6 @@ public class AllowedData : MonoBehaviour {
             allowed_data_array.Add(allowed_data_array_key_string, allowed_data_array_value_integer);
         }
 
-        Debug.Log("ALLOWED DATA");
-
         foreach (var kvp in allowed_data_array) {
             string l = kvp.Key + ": " + kvp.Value; // 3 TABS between key and value.
             allowed_data_text.text += l;

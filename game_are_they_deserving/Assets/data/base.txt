@@ -8,3 +8,13 @@ Peaceful
 Oxygen Environment
 Oxygen Based Life
 Water Ocean
+Acid Rain
+Blood Rain
+Blood Ocean
+Radioactive Environment
+Desert Biome
+Jungle Biome
+Tundra Biome
+Ice Sheet Biome
+Arid Biome
+Plains Biome
