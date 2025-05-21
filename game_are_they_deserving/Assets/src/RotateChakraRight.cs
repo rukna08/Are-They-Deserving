@@ -22,10 +22,6 @@ public class RotateChakraRight : MonoBehaviour {
             rotation_amount -= 0.5f;    
             yield return null;
         }
-
-        Debug.Log("Right Rotation done!");
-        
-        //transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0f, transform.eulerAngles.z);
     }
 
     IEnumerator rotate_left() {
@@ -34,9 +30,5 @@ public class RotateChakraRight : MonoBehaviour {
             rotation_amount += 0.5f;
             yield return null;
         }
-
-        Debug.Log("Left Rotation done!");
-        
-        //transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0f, transform.eulerAngles.z);
     }
 }
