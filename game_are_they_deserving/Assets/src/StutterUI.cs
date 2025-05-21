@@ -27,7 +27,7 @@ public class StutterUI : MonoBehaviour {
     IEnumerator stutter() {
                
          while (true) {
-            int iterations = Random.Range(100, 5000);
+            int iterations = Random.Range(10, 300);
             // 50 rapid alpha changes
             for (int i = 0; i < iterations; i++) {
                 text.color = new Color(text.color.r, text.color.g, text.color.b, Random.Range(0f, 1f));
@@ -36,7 +36,7 @@ public class StutterUI : MonoBehaviour {
 
             text.color = new Color(text.color.r, text.color.g, text.color.b, 1f);
             // Wait 2 seconds after each batch
-            yield return new WaitForSeconds(Random.Range(1f, 5f));
+            yield return new WaitForSeconds(Random.Range(5f, 60f));
         }
 
     }
