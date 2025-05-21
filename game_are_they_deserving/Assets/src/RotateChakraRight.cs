@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotateChakraRight : MonoBehaviour {
     
     float rotation_amount;
-    bool ray_has_started_right_rotation = false;
+    bool ray_has_started_right_rotation;
     public bool is_chakra_1;
     public bool is_chakra_2;
     public bool is_chakra_3;
@@ -16,12 +16,17 @@ public class RotateChakraRight : MonoBehaviour {
 
     void Start() {
         collider = GetComponent<BoxCollider2D>();
+        ray_has_started_right_rotation = false;
     }
 
     void OnEnable() {
         if (collider == null) {
             collider = GetComponent<BoxCollider2D>();
         }
+
+        ray_has_started_right_rotation = false;
+
+        StartCoroutine(rotate_left());
     }
 
     void Update() {
