@@ -1,7 +1,5 @@
-Warlike:84;
-Liquid Nitrogen Ocean:29;
-Surface Area Large:95;
-Peaceful:88;
-Oxygen Environment:18;
-Oxygen Based Life:10;
-Water Ocean:15;
+Warlike:98;
+Liquid Nitrogen Ocean:97;
+Tech Level Low:30;
+Oxygen Environment:37;
+Oxygen Based Life:76;

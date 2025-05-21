@@ -1,3 +1,5 @@
-Pollution:82;
-Toxic Environment:39;
-Tech Level Low:57;
+Pollution:16;
+Toxic Environment:83;
+Surface Area Large:41;
+Peaceful:82;
+Water Ocean:55;

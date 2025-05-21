@@ -673,8 +673,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 4287653183
+  m_fontColor: {r: 0.248309, g: 0.39456517, b: 0.5660378, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: 
-  not_allowed_text: {fileID: 720213773}
+  not_allowed_data_text: {fileID: 720213773}
 --- !u!1 &897343160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,8 +1308,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278237951
-  m_fontColor: {r: 1, g: 0.7279428, b: 0, a: 1}
+    rgba: 4287653183
+  m_fontColor: {r: 0.248309, g: 0.39456517, b: 0.5660378, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1427,7 +1427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.008, y: 0}
   m_AnchorMax: {x: 0.117000006, y: 1}
-  m_AnchoredPosition: {x: -0.2999878, y: 1.2158012}
+  m_AnchoredPosition: {x: -0.29992676, y: 1.2158012}
   m_SizeDelta: {x: 50, y: -2.4316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731574692
@@ -1738,8 +1738,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 4287653183
+  m_fontColor: {r: 0.248309, g: 0.39456517, b: 0.5660378, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1840,7 +1840,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85600007}
   m_AnchorMax: {x: 0.35779285, y: 1}
-  m_AnchoredPosition: {x: 9.367493, y: -6.8742676}
+  m_AnchoredPosition: {x: 9.367249, y: -6.8742676}
   m_SizeDelta: {x: -9.36525, y: -3.5494995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105108023
@@ -1872,8 +1872,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278237951
-  m_fontColor: {r: 1, g: 0.7279428, b: 0, a: 1}
+    rgba: 4287653183
+  m_fontColor: {r: 0.248309, g: 0.39456517, b: 0.5660378, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
