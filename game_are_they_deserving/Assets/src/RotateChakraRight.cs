@@ -6,6 +6,9 @@ public class RotateChakraRight : MonoBehaviour {
     
     float rotation_amount;
     bool ray_has_started_right_rotation = false;
+    public bool is_chakra_1;
+    public bool is_chakra_2;
+    public bool is_chakra_3;
 
     RaycastHit2D hit;
 
@@ -22,9 +25,21 @@ public class RotateChakraRight : MonoBehaviour {
         
         if (!ray_has_started_right_rotation) {
             if (hit.collider != null) {
-                if (hit.collider.name == "Chakra 1" || hit.collider.name == "Chakra 2" || hit.collider.name == "Chakra 3") {
-                    ray_has_started_right_rotation = true;
-                    StartCoroutine(rotate_right());
+                if (is_chakra_1) {
+                    if (hit.collider.name == "Chakra 1") {
+                        ray_has_started_right_rotation = true;
+                        StartCoroutine(rotate_right());
+                    }
+                } else if (is_chakra_2) {
+                    if (hit.collider.name == "Chakra 2") {
+                        ray_has_started_right_rotation = true;
+                        StartCoroutine(rotate_right());
+                    }
+                } else if (is_chakra_3) {
+                    if (hit.collider.name == "Chakra 3") {
+                        ray_has_started_right_rotation = true;
+                        StartCoroutine(rotate_right());
+                    }
                 }
             }
         }
