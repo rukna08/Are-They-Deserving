@@ -351,7 +351,9 @@ GameObject:
   m_Component:
   - component: {fileID: 438516312}
   - component: {fileID: 438516311}
+  - component: {fileID: 438516315}
   - component: {fileID: 438516313}
+  - component: {fileID: 438516314}
   m_Layer: 0
   m_Name: Chakra 2
   m_TagString: Untagged
@@ -439,6 +441,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation_speed: 0.2
+--- !u!114 &438516314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438516310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65e4427e694c34488586302befbd8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &438516315
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438516310}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.14, y: 2.18}
+    newSize: {x: 2.14, y: 2.18}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.14, y: 2.18}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,7 +663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85600007}
   m_AnchorMax: {x: 0.35779285, y: 1}
-  m_AnchoredPosition: {x: 9.662964, y: -6.2719727}
+  m_AnchoredPosition: {x: 9.662933, y: -6.2719727}
   m_SizeDelta: {x: -10.807159, y: -3.4559937}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566529886
@@ -714,7 +773,9 @@ GameObject:
   m_Component:
   - component: {fileID: 600087671}
   - component: {fileID: 600087670}
+  - component: {fileID: 600087674}
   - component: {fileID: 600087672}
+  - component: {fileID: 600087673}
   m_Layer: 0
   m_Name: Chakra 3
   m_TagString: Untagged
@@ -802,6 +863,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation_speed: 0.3
+--- !u!114 &600087673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600087669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65e4427e694c34488586302befbd8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &600087674
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600087669}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.14, y: 2.18}
+    newSize: {x: 2.14, y: 2.18}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.14, y: 2.18}
+  m_EdgeRadius: 0
 --- !u!1 &720213770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,8 +2145,9 @@ GameObject:
   - component: {fileID: 2007689591}
   - component: {fileID: 2007689593}
   - component: {fileID: 2007689594}
+  - component: {fileID: 2007689595}
   m_Layer: 0
-  m_Name: Chakra
+  m_Name: Chakra 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2126,6 +2245,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f65e4427e694c34488586302befbd8cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2007689595
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007689590}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.14, y: 2.18}
+    newSize: {x: 2.14, y: 2.18}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.14, y: 2.18}
+  m_EdgeRadius: 0
 --- !u!1 &2105108021
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +2324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85600007}
   m_AnchorMax: {x: 0.35779285, y: 1}
-  m_AnchoredPosition: {x: 9.366821, y: -6.8742676}
+  m_AnchoredPosition: {x: 9.366791, y: -6.8742676}
   m_SizeDelta: {x: -9.36525, y: -3.5494995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105108023
