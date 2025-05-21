@@ -421,12 +421,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438516310}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.7, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -153.81929, y: -23.028944, z: 1.2247635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 460875331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &438516313
 MonoBehaviour:
@@ -501,6 +501,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.14, y: 2.18}
   m_EdgeRadius: 0
+--- !u!1 &460875330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 460875331}
+  m_Layer: 0
+  m_Name: Chakras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &460875331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460875330}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 153.81929, y: 26.728945, z: -1.2247635}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2007689592}
+  - {fileID: 438516312}
+  - {fileID: 600087671}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +700,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85600007}
   m_AnchorMax: {x: 0.35779285, y: 1}
-  m_AnchoredPosition: {x: 9.662811, y: -6.2719727}
+  m_AnchoredPosition: {x: 9.662842, y: -6.2719727}
   m_SizeDelta: {x: -10.807159, y: -3.4559937}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566529886
@@ -846,12 +880,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600087669}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 3.7, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -151.31929, y: -23.028944, z: 1.2247635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 460875331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &600087672
 MonoBehaviour:
@@ -1574,6 +1608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manuscript_ui: {fileID: 554585956}
   planet_ui: {fileID: 390224263}
+  chakras_ui: {fileID: 460875330}
 --- !u!1 &1511355390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,6 +1919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manuscript_ui: {fileID: 554585956}
   planet_ui: {fileID: 390224263}
+  chakras_ui: {fileID: 460875330}
 --- !u!1 &1755864354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,12 +2281,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007689590}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 3.7, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -156.31929, y: -23.028944, z: 1.2247635}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 460875331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2007689593
 MonoBehaviour:
@@ -2360,7 +2396,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.85600007}
   m_AnchorMax: {x: 0.35779285, y: 1}
-  m_AnchoredPosition: {x: 9.366669, y: -6.8742676}
+  m_AnchoredPosition: {x: 9.366699, y: -6.8742676}
   m_SizeDelta: {x: -9.36525, y: -3.5494995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105108023
@@ -2477,8 +2513,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 460875331}
   - {fileID: 48125648}
   - {fileID: 975358661}
-  - {fileID: 2007689592}
-  - {fileID: 438516312}
-  - {fileID: 600087671}
