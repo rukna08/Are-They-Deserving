@@ -13,14 +13,6 @@ public class RotateChakraRight : MonoBehaviour {
     RaycastHit2D hit;
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.D)) {
-            StartCoroutine(rotate_right());
-        }
-
-        if(Input.GetKeyDown(KeyCode.A)) {
-            StartCoroutine(rotate_left());
-        }
-
         hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         
         if (!ray_has_started_right_rotation) {

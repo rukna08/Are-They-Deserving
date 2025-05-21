@@ -1,6 +1,7 @@
 
 
 
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -10,14 +11,33 @@ public class StutterUI : MonoBehaviour {
 
     void Start() {
         text = GetComponent<TMP_Text>();
+
+        StartCoroutine(stutter());
     }
 
-    void Update() {
-        stutter();
+    void OnEnable() {
+        if (text == null) {
+            text = GetComponent<TMP_Text>();
+        }
+
+        StartCoroutine(stutter());
     }
 
-    void stutter() {
-        text.color = new Color(text.color.r, text.color.g, text.color.b, Random.Range(0.5f, 1f));
-    }
+    // Credit: Took help of ChatGPT to modify this code.
+    IEnumerator stutter() {
+               
+         while (true) {
+            int iterations = Random.Range(100, 5000);
+            // 50 rapid alpha changes
+            for (int i = 0; i < iterations; i++) {
+                text.color = new Color(text.color.r, text.color.g, text.color.b, Random.Range(0f, 1f));
+                yield return null; // Change every frame (fast)
+            }
 
+            text.color = new Color(text.color.r, text.color.g, text.color.b, 1f);
+            // Wait 2 seconds after each batch
+            yield return new WaitForSeconds(Random.Range(1f, 5f));
+        }
+
+    }
 }
