@@ -278,6 +278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manuscript_ui: {fileID: 554585956}
   chakra_holder: {fileID: 460875330}
+  chakra_offset: 0.5
 --- !u!1 &274196325
 GameObject:
   m_ObjectHideFlags: 0

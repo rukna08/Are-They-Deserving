@@ -10,14 +10,14 @@ public class Scroll : MonoBehaviour {
     public float chakra_offset;
 
     void Start() {
-        offset = 20f;
+        offset = 25f;
     }
 
     void Update() {
         
 
         // Scroll up
-        if (chakra_holder.transform.position.y > 0.4f) {
+        if (chakra_holder.transform.position.y >= 0.5f) {
             
             if (Input.GetAxis("Mouse ScrollWheel") > 0f) {
                 manuscript_ui.transform.position = new Vector3(manuscript_ui.transform.position.x,
