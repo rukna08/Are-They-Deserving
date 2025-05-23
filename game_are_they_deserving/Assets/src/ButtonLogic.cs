@@ -8,6 +8,10 @@ public class ButtonLogic : MonoBehaviour {
     public GameObject planet_ui;
     public GameObject chakras_ui;
 
+    public void Start() {
+        enable_planet_ui();
+    }
+
     public void enable_manuscript_ui() {
         manuscript_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.b, 255);
         manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.b, 255);
