@@ -23,6 +23,10 @@ public class StutterUI : MonoBehaviour {
         StartCoroutine(stutter());
     }
 
+    void OnDisable() {
+        StopAllCoroutines();
+    }
+
     // Credit: Took help of ChatGPT to modify this code.
     IEnumerator stutter() {
                
