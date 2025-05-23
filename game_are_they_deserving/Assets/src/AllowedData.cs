@@ -10,7 +10,7 @@ public class AllowedData : MonoBehaviour {
     public string path;
     public TMP_Text allowed_data_text;
 
-    Dictionary<string, int> allowed_data_array = new Dictionary<string, int>();
+    public Dictionary<string, int> allowed_data_array = new Dictionary<string, int>();
 
     void Start () {
         load_text();
