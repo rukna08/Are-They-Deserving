@@ -9,11 +9,10 @@ public class Judgement : MonoBehaviour {
     
     public PlanetData planet_data;
     public AllowedData allowed_data;
+    public NotAllowedData not_allowed_data;
 
     void Start() {
         judgement_score = 0;
-        judgement_score_text.text = "Judgement Score: " + judgement_score.ToString();
-
     }
 
     void Update() {
@@ -32,14 +31,20 @@ public class Judgement : MonoBehaviour {
         }
         
         if (Input.GetKeyDown(KeyCode.J)) {
+            judgement_score = 0;
+
             for(int i = 0; i < planet_data.planet_data_array.Count; i++) {
                 if (allowed_data.allowed_data_array.ContainsKey(planet_data.planet_data_array[i])) {
                     judgement_score += allowed_data.allowed_data_array[planet_data.planet_data_array[i]];
                     Debug.Log("Allowed Data contains " + planet_data.planet_data_array[i] + " with weight: " + allowed_data.allowed_data_array[planet_data.planet_data_array[i]]);
                 }
+
+                if (not_allowed_data.not_allowed_data_array.ContainsKey(planet_data.planet_data_array[i])) {
+                    judgement_score -= not_allowed_data.not_allowed_data_array[planet_data.planet_data_array[i]];
+                    Debug.Log("Not Allowed Data contains " + planet_data.planet_data_array[i] + " with weight: " + not_allowed_data.not_allowed_data_array[planet_data.planet_data_array[i]]);
+                }
             }
 
-            judgement_score_text.text = "Judgement Score: " + judgement_score.ToString();
         }
 
         // Generating a new planet basically.
@@ -48,5 +53,6 @@ public class Judgement : MonoBehaviour {
             judgement_score = 0;
         }
 
+        judgement_score_text.text = "Judgement Score: " + judgement_score.ToString();
     }
 }

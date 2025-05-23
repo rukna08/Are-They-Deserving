@@ -17,6 +17,8 @@ public class AllowedData : MonoBehaviour {
     }
 
     void load_text() {
+        allowed_data_array.Clear();
+
         path = "Assets/data/allowed.txt";
         
         allowed_data_text.text = "";

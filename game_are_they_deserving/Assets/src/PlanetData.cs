@@ -17,6 +17,8 @@ public class PlanetData : MonoBehaviour {
     }
 
     public void load_text() {
+        planet_data_array.Clear();
+
         path = "Assets/data/base.txt";
 
         planet_data_text.text = "";

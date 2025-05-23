@@ -2028,6 +2028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   judgement_score_text: {fileID: 1566974837}
   planet_data: {fileID: 1051558595}
+  allowed_data: {fileID: 1511355394}
 --- !u!1 &1731574690
 GameObject:
   m_ObjectHideFlags: 0

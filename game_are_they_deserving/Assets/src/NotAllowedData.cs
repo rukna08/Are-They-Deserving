@@ -10,13 +10,15 @@ public class NotAllowedData : MonoBehaviour {
     public string path;
     public TMP_Text not_allowed_data_text;
 
-    Dictionary<string, int> not_allowed_data_array = new Dictionary<string, int>();
+    public Dictionary<string, int> not_allowed_data_array = new Dictionary<string, int>();
 
     void Start () {
         load_text();
     }
 
     void load_text() {
+        not_allowed_data_array.Clear();
+
         path = "Assets/data/not_allowed.txt";
         
         not_allowed_data_text.text = "";
