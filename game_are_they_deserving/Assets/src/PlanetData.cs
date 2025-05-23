@@ -16,7 +16,7 @@ public class PlanetData : MonoBehaviour {
         load_text();
     }
 
-    void load_text() {
+    public void load_text() {
         path = "Assets/data/base.txt";
 
         planet_data_text.text = "";
