@@ -3,18 +3,18 @@ using TMPro;
 using UnityEngine;
 
 public class Credits : MonoBehaviour {
-    public float credits;
+    public int credits;
 
     TMP_Text credits_text;
 
     public void Start() {
         credits_text = GetComponent<TMP_Text>();
-        credits = 50.46f;
+        credits = 5;
     }
 
     private void Update() {
         
-        credits_text.text = "Credits: " + credits.ToString("0.00");
+        credits_text.text = "Credits: " + credits.ToString();
 
     }
 }
