@@ -10,7 +10,7 @@ public class ButtonLogic : MonoBehaviour {
     public GameObject trade_ui;
 
     public void Start() {
-        enable_planet_ui();
+        enable_trade_ui();
     }
 
     public void enable_manuscript_ui() {
