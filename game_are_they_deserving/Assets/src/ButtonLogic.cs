@@ -28,10 +28,9 @@ public class ButtonLogic : MonoBehaviour {
         planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.b, 0);
         planet_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = false;
         planet_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = false;
-        planet_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = false;
-
-        trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color(trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.r, trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.g, trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.b, 0);
-        trade_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = false;    
+        planet_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = false; 
+        
+        trade_ui.SetActive(false);
 
         chakras_ui.SetActive(true);
     }
@@ -53,8 +52,7 @@ public class ButtonLogic : MonoBehaviour {
         planet_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = true;
         planet_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = true;
 
-        trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color(trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.r, trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.g, trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.b, 0);
-        trade_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = false;
+        trade_ui.SetActive(false);
 
         chakras_ui.SetActive(false);
     }
@@ -76,8 +74,7 @@ public class ButtonLogic : MonoBehaviour {
         planet_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = false;
         planet_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = false;
 
-        trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color(trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.r, trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.g, trade_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.b, 255);
-        trade_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = true;
+        trade_ui.SetActive(true);
 
         chakras_ui.SetActive(false);
     }

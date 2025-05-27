@@ -6,12 +6,7 @@ public class Scroll : MonoBehaviour {
     public GameObject manuscript_ui;
     public GameObject chakra_holder;
     
-    float offset;
     public float chakra_offset;
-
-    void Start() {
-        offset = 25f;
-    }
 
     void Update() {
         
