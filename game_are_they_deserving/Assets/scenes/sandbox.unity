@@ -523,6 +523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf6cb787a9562204a9efcefc02bc4f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  energy: {fileID: 14466346}
+  credits: {fileID: 483293306}
 --- !u!1 &253068110
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,7 +977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &390224264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1447,7 +1449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &554585957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2123,7 +2125,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Energy
 
-    1000 Units
+    10000 Units
 
     1 Credit'
   m_isRightToLeft: 0
