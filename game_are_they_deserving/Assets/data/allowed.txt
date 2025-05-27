@@ -1,5 +1,12 @@
-Pollution:69;
-Toxic Environment:66;
-Desert Biome:40;
-Tundra Biome:48;
-Ice Sheet Biome:53;
+Pollution:43;
+Toxic Environment:33;
+Warlike:51;
+Surface Area Large:70;
+Oxygen Environment:11;
+Water Ocean:57;
+Blood Rain:29;
+Blood Ocean:94;
+Radioactive Environment:49;
+Jungle Biome:88;
+Ice Sheet Biome:82;
+Arid Biome:60;
