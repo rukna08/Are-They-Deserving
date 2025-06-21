@@ -18,6 +18,8 @@ public class Judgement : MonoBehaviour {
     public GameObject planet_data_cross_ui;
     public GameObject kill_and_next_planet_cross_ui;
 
+    public GameObject credits;
+
     void Start() {
         calculate_judgement_score();
     }
@@ -69,6 +71,17 @@ public class Judgement : MonoBehaviour {
         enable_ui();
         planet_data.load_text();
         calculate_judgement_score();
+    }
+
+    public void kill_planet() {
+        if(judgement_score < 0) {
+            Debug.Log("Your Will Is Correct Supreme Executer.");
+            Debug.Log("Planet Destroyed.");
+            
+            credits.GetComponent<Credits>().credits += 1;
+            Debug.Log("1 Imperial Credit granted.");
+            
+        }
     }
 
     public void load_next_planet() {
