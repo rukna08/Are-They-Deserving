@@ -1,9 +1,0 @@
-Pollution:69;
-Peaceful:79;
-Oxygen Environment:79;
-Oxygen Based Life:17;
-Radioactive Environment:85;
-Desert Biome:33;
-Jungle Biome:69;
-Tundra Biome:83;
-Ice Sheet Biome:64;

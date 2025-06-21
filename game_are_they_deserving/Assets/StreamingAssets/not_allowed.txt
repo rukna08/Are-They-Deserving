@@ -1,0 +1,11 @@
+Pollution:93;
+Toxic Environment:43;
+Tech Level Low:37;
+Surface Area Large:63;
+Peaceful:56;
+Oxygen Environment:72;
+Acid Rain:84;
+Blood Rain:33;
+Blood Ocean:55;
+Ice Sheet Biome:95;
+Plains Biome:17;

@@ -1,0 +1,9 @@
+Warlike:88;
+Liquid Nitrogen Ocean:77;
+Oxygen Based Life:93;
+Water Ocean:20;
+Radioactive Environment:27;
+Desert Biome:73;
+Jungle Biome:65;
+Tundra Biome:10;
+Arid Biome:94;

@@ -2332,6 +2332,8 @@ MonoBehaviour:
   manuscript_ui: {fileID: 554585956}
   planet_ui: {fileID: 390224263}
   trade_ui: {fileID: 353985320}
+  kill_button: {fileID: 658016221}
+  next_planet_button: {fileID: 649014296}
 --- !u!114 &649014299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2482,6 +2484,8 @@ MonoBehaviour:
   manuscript_ui: {fileID: 554585956}
   planet_ui: {fileID: 390224263}
   trade_ui: {fileID: 353985320}
+  kill_button: {fileID: 658016221}
+  next_planet_button: {fileID: 649014296}
 --- !u!114 &658016224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2526,9 +2530,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 658016223}
-        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1566974839}
+        m_TargetAssemblyTypeName: Judgement, Assembly-CSharp
+        m_MethodName: kill_planet
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3878,6 +3882,8 @@ MonoBehaviour:
   manuscript_ui: {fileID: 554585956}
   planet_ui: {fileID: 390224263}
   trade_ui: {fileID: 353985320}
+  kill_button: {fileID: 658016221}
+  next_planet_button: {fileID: 649014296}
 --- !u!1 &1117131017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4440,6 +4446,7 @@ MonoBehaviour:
   planet_data_ui: {fileID: 1051558590}
   planet_data_cross_ui: {fileID: 448867388}
   kill_and_next_planet_cross_ui: {fileID: 1858852639}
+  credits: {fileID: 483293306}
 --- !u!1 &1638135797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,6 +4669,8 @@ MonoBehaviour:
   manuscript_ui: {fileID: 554585956}
   planet_ui: {fileID: 390224263}
   trade_ui: {fileID: 353985320}
+  kill_button: {fileID: 658016221}
+  next_planet_button: {fileID: 649014296}
 --- !u!1 &1755864354
 GameObject:
   m_ObjectHideFlags: 0
@@ -4825,7 +4834,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 119660459eb38494c8648a6dedf902a6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.119
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5074,6 +5083,8 @@ MonoBehaviour:
   manuscript_ui: {fileID: 554585956}
   planet_ui: {fileID: 390224263}
   trade_ui: {fileID: 353985320}
+  kill_button: {fileID: 658016221}
+  next_planet_button: {fileID: 649014296}
 --- !u!1 &1858852639
 GameObject:
   m_ObjectHideFlags: 0

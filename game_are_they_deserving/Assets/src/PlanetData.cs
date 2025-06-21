@@ -19,18 +19,24 @@ public class PlanetData : MonoBehaviour {
     public void load_text() {
         planet_data_array.Clear();
 
-        path = "Assets/data/base.txt";
+        // Updated path to StreamingAssets
+        path = Path.Combine(Application.streamingAssetsPath, "base.txt");
 
         planet_data_text.text = "";
 
-        string line;
-        StreamReader reader = new StreamReader(path);
-        while((line = reader.ReadLine()) != null) {
+        if (!File.Exists(path)) {
+            Debug.LogError("PlanetData file not found at: " + path);
+            return;
+        }
+
+        string[] lines = File.ReadAllLines(path);
+        foreach (string line in lines) {
             int dice_roll = Random.Range(0, 3);
             if (dice_roll == Random.Range(0, 3)) {
                 planet_data_text.text += line + "\n";
-                planet_data_array.Add(line);                
+                planet_data_array.Add(line);
             }
         }
     }
+
 }
