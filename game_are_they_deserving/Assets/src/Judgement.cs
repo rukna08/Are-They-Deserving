@@ -20,6 +20,8 @@ public class Judgement : MonoBehaviour {
 
     public GameObject credits;
 
+    public AudioSource evil_laughter_sfx;
+
     void Start() {
         calculate_judgement_score();
     }
@@ -74,7 +76,11 @@ public class Judgement : MonoBehaviour {
     }
 
     public void kill_planet() {
+        
+        // When the judgement is correct.
         if(judgement_score < 0) {
+            evil_laughter_sfx.Play();
+
             Debug.Log("Your Will Is Correct Supreme Executer.");
             Debug.Log("Planet Destroyed.");
             
