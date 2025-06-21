@@ -87,8 +87,15 @@ public class Judgement : MonoBehaviour {
             credits.GetComponent<Credits>().credits += 1;
             Debug.Log("1 Imperial Credit granted.");
             
-            load_next_planet();
+        } else {
+            Debug.Log("Your Will Is Incorrect Supreme Executer.");
+            Debug.Log("Planet Destroyed.");
+            credits.GetComponent<Credits>().credits -= 1;
+            Debug.Log("1 Imperial Credit taken away.");
         }
+
+        load_next_planet();
+    
     }
 
     public void load_next_planet() {
