@@ -14,6 +14,7 @@ public class Judgement : MonoBehaviour {
 
     public GameObject kill_button;
     public GameObject next_planet_button;
+    public GameObject planet_data_ui;
 
     void Start() {
         calculate_judgement_score();
@@ -40,19 +41,22 @@ public class Judgement : MonoBehaviour {
     void disable_ui() {
         kill_button.SetActive(false);
         next_planet_button.SetActive(false);
+        planet_data_ui.SetActive(false);
     }
 
     void enable_ui() {
         kill_button.SetActive(true);
         next_planet_button.SetActive(true);
+        planet_data_ui.SetActive(true);
     }
 
-    IEnumerator reach_next_planet() {
+    IEnumerator reach_next_planet(float time_to_reach_next_planet) {
         disable_ui();
 
         Debug.Log("Travelling to next planet!");
         
-        yield return new WaitForSeconds(5f);
+        
+        yield return new WaitForSeconds(time_to_reach_next_planet);
         
         Debug.Log("Planet reached!!");
         
@@ -62,6 +66,9 @@ public class Judgement : MonoBehaviour {
     }
 
     public void load_next_planet() {
-        StartCoroutine(reach_next_planet());
+        // Range is less now due to development mode.
+        float time_to_reach_next_planet = Random.Range(0.1f, 1.5f);
+        Debug.Log("To Reach Next Planet: " + time_to_reach_next_planet.ToString());
+        StartCoroutine(reach_next_planet(time_to_reach_next_planet));
     }
 }
