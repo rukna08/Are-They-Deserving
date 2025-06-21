@@ -8,9 +8,11 @@ public class ButtonLogic : MonoBehaviour {
     public GameObject manuscript_ui;
     public GameObject planet_ui;
     public GameObject trade_ui;
+    public GameObject kill_button;
+    public GameObject next_planet_button;
 
     public void Start() {
-        enable_manuscript_ui();
+        enable_planet_ui();
     }
 
     public void enable_manuscript_ui() {
@@ -35,6 +37,9 @@ public class ButtonLogic : MonoBehaviour {
         trade_ui.SetActive(false);
 
         chakras_ui.SetActive(true);
+
+        kill_button.SetActive(false);
+        next_planet_button.SetActive(false);
     }
 
     public void enable_planet_ui() {
@@ -59,6 +64,9 @@ public class ButtonLogic : MonoBehaviour {
         trade_ui.SetActive(false);
 
         chakras_ui.SetActive(false);
+
+        kill_button.SetActive(true);
+        next_planet_button.SetActive(true);
     }
 
     public void enable_trade_ui() {
@@ -83,6 +91,9 @@ public class ButtonLogic : MonoBehaviour {
         trade_ui.SetActive(true);
 
         chakras_ui.SetActive(false);
+
+        kill_button.SetActive(false);
+        next_planet_button.SetActive(false);
     }
 
 }
