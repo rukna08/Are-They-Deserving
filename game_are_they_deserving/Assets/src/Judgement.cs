@@ -81,6 +81,7 @@ public class Judgement : MonoBehaviour {
             credits.GetComponent<Credits>().credits += 1;
             Debug.Log("1 Imperial Credit granted.");
             
+            load_next_planet();
         }
     }
 
