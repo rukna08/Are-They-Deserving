@@ -15,6 +15,8 @@ public class Judgement : MonoBehaviour {
     public GameObject kill_button;
     public GameObject next_planet_button;
     public GameObject planet_data_ui;
+    public GameObject planet_data_cross_ui;
+    public GameObject kill_and_next_planet_cross_ui;
 
     void Start() {
         calculate_judgement_score();
@@ -42,12 +44,16 @@ public class Judgement : MonoBehaviour {
         kill_button.SetActive(false);
         next_planet_button.SetActive(false);
         planet_data_ui.SetActive(false);
+        planet_data_cross_ui.SetActive(true);
+        kill_and_next_planet_cross_ui.SetActive(true);
     }
 
     void enable_ui() {
         kill_button.SetActive(true);
         next_planet_button.SetActive(true);
         planet_data_ui.SetActive(true);
+        planet_data_cross_ui.SetActive(false);
+        kill_and_next_planet_cross_ui.SetActive(false);
     }
 
     IEnumerator reach_next_planet(float time_to_reach_next_planet) {
