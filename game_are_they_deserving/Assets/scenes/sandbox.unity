@@ -2286,9 +2286,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 649014298}
-        m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1566974839}
+        m_TargetAssemblyTypeName: Judgement, Assembly-CSharp
+        m_MethodName: load_next_planet
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4730,7 +4730,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 119660459eb38494c8648a6dedf902a6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.069
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
