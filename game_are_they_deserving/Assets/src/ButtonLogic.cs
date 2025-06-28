@@ -20,6 +20,7 @@ public class ButtonLogic : MonoBehaviour {
         manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.b, 255);
         manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.b, 255);
         manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.b, 255);
+        
         manuscript_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = true;
         manuscript_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = true;
         manuscript_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = true;
@@ -28,8 +29,7 @@ public class ButtonLogic : MonoBehaviour {
         planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.b, 0);
         planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.b, 0);
         planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.b, 0);
-        //planet_ui.transform.GetChild(3).gameObject.SetActive(false);
-        //planet_ui.transform.GetChild(4).gameObject.SetActive(false);
+        
         planet_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = false;
         planet_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = false;
         planet_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = false; 
@@ -39,6 +39,7 @@ public class ButtonLogic : MonoBehaviour {
         chakras_ui.SetActive(true);
 
         kill_button.SetActive(false);
+
         next_planet_button.SetActive(false);
     }
 
@@ -47,6 +48,7 @@ public class ButtonLogic : MonoBehaviour {
         manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.b, 0);
         manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.b, 0);
         manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.b, 0);
+        
         manuscript_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = false;
         manuscript_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = false;
         manuscript_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = false;
@@ -55,8 +57,7 @@ public class ButtonLogic : MonoBehaviour {
         planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.b, 255);
         planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.b, 255);
         planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.b, 255);
-        //planet_ui.transform.GetChild(3).gameObject.SetActive(true);
-        //planet_ui.transform.GetChild(4).gameObject.SetActive(true);
+        
         planet_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = true;
         planet_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = true;
         planet_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = true;
@@ -66,6 +67,7 @@ public class ButtonLogic : MonoBehaviour {
         chakras_ui.SetActive(false);
 
         kill_button.SetActive(true);
+
         next_planet_button.SetActive(true);
     }
 
@@ -74,6 +76,7 @@ public class ButtonLogic : MonoBehaviour {
         manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.b, 0);
         manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.b, 0);
         manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color = new Color(manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.r, manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.g, manuscript_ui.transform.GetChild(3).GetComponent<TextMeshProUGUI>().color.b, 0);
+        
         manuscript_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = false;
         manuscript_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = false;
         manuscript_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = false;
@@ -82,8 +85,7 @@ public class ButtonLogic : MonoBehaviour {
         planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color.b, 0);
         planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(1).GetComponent<TextMeshProUGUI>().color.b, 0);
         planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color = new Color(planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.r, planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.g, planet_ui.transform.GetChild(2).GetComponent<TextMeshProUGUI>().color.b, 0);
-        //planet_ui.transform.GetChild(3).gameObject.SetActive(false);
-        //planet_ui.transform.GetChild(4).gameObject.SetActive(false);
+
         planet_ui.transform.GetChild(0).GetComponent<StutterUI>().enabled = false;
         planet_ui.transform.GetChild(1).GetComponent<StutterUI>().enabled = false;
         planet_ui.transform.GetChild(2).GetComponent<StutterUI>().enabled = false;
@@ -93,6 +95,7 @@ public class ButtonLogic : MonoBehaviour {
         chakras_ui.SetActive(false);
 
         kill_button.SetActive(false);
+
         next_planet_button.SetActive(false);
     }
 

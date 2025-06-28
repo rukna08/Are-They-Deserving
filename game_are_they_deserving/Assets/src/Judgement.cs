@@ -22,6 +22,8 @@ public class Judgement : MonoBehaviour {
 
     public AudioSource evil_laughter_sfx;
 
+    public bool is_enabled_judgement_score_text;
+
     void Start() {
         calculate_judgement_score();
     }
@@ -32,16 +34,16 @@ public class Judgement : MonoBehaviour {
         for(int i = 0; i < planet_data.planet_data_array.Count; i++) {
             if (allowed_data.allowed_data_array.ContainsKey(planet_data.planet_data_array[i])) {
                 judgement_score += allowed_data.allowed_data_array[planet_data.planet_data_array[i]];
-                //Debug.Log("Allowed Data contains " + planet_data.planet_data_array[i] + " with weight: " + allowed_data.allowed_data_array[planet_data.planet_data_array[i]]);
             }
 
             if (not_allowed_data.not_allowed_data_array.ContainsKey(planet_data.planet_data_array[i])) {
                 judgement_score -= not_allowed_data.not_allowed_data_array[planet_data.planet_data_array[i]];
-                //Debug.Log("Not Allowed Data contains " + planet_data.planet_data_array[i] + " with weight: " + not_allowed_data.not_allowed_data_array[planet_data.planet_data_array[i]]);
             }
         }
 
-        judgement_score_text.text = "Judgement Score: " + judgement_score.ToString();
+        if (is_enabled_judgement_score_text) {
+            judgement_score_text.text = "Judgement Score: " + judgement_score.ToString();    
+        }
     }
 
     void disable_ui() {
