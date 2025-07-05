@@ -17,8 +17,12 @@ public class CloseConsole : MonoBehaviour {
 
     public TMP_Text this_button_text;
 
-    void Start() {
-        is_console_active = true;
+    void Update() {
+        if (is_console_active) {
+            this_button_text.text = "Close Console";
+        } else if (!is_console_active) {
+            this_button_text.text = "Open Console";
+        }
     }
 
     public void open_and_close_console() {
@@ -32,7 +36,6 @@ public class CloseConsole : MonoBehaviour {
             hand.SetActive(false);
             reality.SetActive(true);
             is_console_active = false;
-            this_button_text.text = "Open Console"; 
         } else if (!is_console_active) {
             manuscript_ui.SetActive(true);
             planet_ui.SetActive(true);
@@ -41,7 +44,6 @@ public class CloseConsole : MonoBehaviour {
             hand.SetActive(true);
             reality.SetActive(false);
             is_console_active = true;
-            this_button_text.text = "Close Console";
         }
     }
 }
