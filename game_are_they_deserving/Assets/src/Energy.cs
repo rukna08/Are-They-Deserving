@@ -15,7 +15,6 @@ public class Energy : MonoBehaviour {
 
     void Update() {
         energy_text.text = "Energy: " + energy.ToString();
-
         energy -= 0.1f;
     }
 
