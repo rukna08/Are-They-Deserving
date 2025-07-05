@@ -12,16 +12,16 @@ public class RotateChakraRight : MonoBehaviour {
 
     RaycastHit2D hit;
 
-    BoxCollider2D collider;
+    BoxCollider2D this_collider;
 
     void Start() {
-        collider = GetComponent<BoxCollider2D>();
+        this_collider = GetComponent<BoxCollider2D>();
         ray_has_started_right_rotation = false;
     }
 
     void OnEnable() {
-        if (collider == null) {
-            collider = GetComponent<BoxCollider2D>();
+        if (this_collider == null) {
+            this_collider = GetComponent<BoxCollider2D>();
         }
 
         ray_has_started_right_rotation = false;
@@ -57,7 +57,7 @@ public class RotateChakraRight : MonoBehaviour {
     }
 
     IEnumerator rotate_right() {
-        collider.enabled = false;
+        this_collider.enabled = false;
         while (rotation_amount != -185f) {
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, rotation_amount, transform.eulerAngles.z);
             rotation_amount -= 5.0f;    
@@ -74,6 +74,6 @@ public class RotateChakraRight : MonoBehaviour {
             rotation_amount += 5.0f;
             yield return null;
         }
-        collider.enabled = true;
+        this_collider.enabled = true;
     }
 }
