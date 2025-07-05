@@ -1,18 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class GridScript : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class GridScript : MonoBehaviour {
+
+    public GameObject grid_unit;
+
+    public int grid_width;
+    public int grid_height;
+    
+    void Start() {
+
+
+        generate_grid();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void generate_grid() {
+        for(int i = 0; i < grid_width; i++) {
+            for(int j = 0; j < grid_height; j++) {
+
+                Instantiate(grid_unit, new Vector3(transform.position.x + i, transform.position.y + j, 1f), Quaternion.identity, transform);
+
+
+            }
+        }
+
+        Debug.Log("Grid Generated!");
     }
+
 }
