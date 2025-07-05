@@ -97,3 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 591a77e8bebd70a40a181553e96d7b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fluctuates: 0
+  fluctuation_rate: 0
+  alpha: 0
+  can_have_unique_color: 0
