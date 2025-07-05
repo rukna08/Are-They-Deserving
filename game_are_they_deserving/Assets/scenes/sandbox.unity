@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 48125646}
   - component: {fileID: 48125645}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Console Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4812,9 +4812,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1288728256}
+        m_TargetAssemblyTypeName: CloseConsole, Assembly-CSharp
+        m_MethodName: close_console
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4874,11 +4874,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8d4f52d02697c4b8ecf0af2141b3cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chakras: {fileID: 460875330}
   manuscript_ui: {fileID: 554585956}
   planet_ui: {fileID: 390224263}
   trade_ui: {fileID: 353985320}
   bottom_panel: {fileID: 274196325}
   scroll: {fileID: 253068110}
+  hand: {fileID: 857931326}
 --- !u!1 &1410992562
 GameObject:
   m_ObjectHideFlags: 0

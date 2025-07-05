@@ -58,9 +58,9 @@ public class RotateChakraRight : MonoBehaviour {
 
     IEnumerator rotate_right() {
         collider.enabled = false;
-        while (rotation_amount != -181f) {
+        while (rotation_amount != -185f) {
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, rotation_amount, transform.eulerAngles.z);
-            rotation_amount -= 1.0f;    
+            rotation_amount -= 5.0f;    
             yield return null;
         }
         yield return new WaitForSeconds(1f);
@@ -69,9 +69,9 @@ public class RotateChakraRight : MonoBehaviour {
     }
 
     IEnumerator rotate_left() {
-        while (rotation_amount != 1f) {
+        while (rotation_amount != 5f) {
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, rotation_amount, transform.eulerAngles.z);
-            rotation_amount += 1.0f;
+            rotation_amount += 5.0f;
             yield return null;
         }
         collider.enabled = true;

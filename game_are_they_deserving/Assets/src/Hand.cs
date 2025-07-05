@@ -9,12 +9,21 @@ public class Hand : MonoBehaviour {
 
     bool is_press_effect_processed;
 
+    void OnEnable() {
+        hide_cursor();
+    }
+
+    void OnDisable() {
+        unhide_cursor();
+    }
+
     void Start() {
+        hide_cursor();
+
         is_press_effect_processed = true;
     }
 
     void Update() {
-        hide_cursor();
         follow_mouse();
         if (Input.GetMouseButtonDown(0) && is_press_effect_processed == true) {
             is_press_effect_processed = false;
@@ -32,6 +41,10 @@ public class Hand : MonoBehaviour {
 
     void hide_cursor() {
         Cursor.visible = false;
+    }
+
+    void unhide_cursor() {
+        Cursor.visible = true;
     }
 
     IEnumerator press_effect() {
