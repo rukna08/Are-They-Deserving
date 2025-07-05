@@ -6,6 +6,13 @@ public class StarGeneration : MonoBehaviour {
     public GameObject star;
     public int number_of_stars;
 
+    void Start() {
+
+        kill_all_stars();
+        generate_stars();
+
+    }
+
     void Update() {
         if (Input.GetKeyDown(KeyCode.G)) {
             kill_all_stars();
