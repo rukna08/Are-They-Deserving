@@ -14,16 +14,16 @@ public class StarGeneration : MonoBehaviour {
 
     void Start() {
 
-        kill_all_stars();
-        generate_stars();
+        /*kill_all_stars();
+        generate_stars();*/
 
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.G)) {
+        /*if (Input.GetKeyDown(KeyCode.G)) {
             kill_all_stars();
             generate_stars();    
-        }
+        }*/
 
     }
 
@@ -43,12 +43,16 @@ public class StarGeneration : MonoBehaviour {
 
     void kill_all_stars() {
         for (int i = transform.childCount - 1; i >= 0; i--) {
-            DestroyImmediate(transform.GetChild(i).gameObject);
+            DestroyImmediate(transform.GetChild(i).gameObject, true);
         }
+
+        number_of_stars = 0;
     }
 
 
     #if UNITY_EDITOR
+
+
 
         [CustomEditor(typeof(StarGeneration))]
         public class StarGenerationEditor : Editor {
@@ -66,13 +70,6 @@ public class StarGeneration : MonoBehaviour {
                     instance.kill_all_stars();
                     instance.generate_stars();
                 }
-
-
-
-                if(GUILayout.Button("Generate More Stars")) {
-                    instance.generate_stars();
-                }
-
 
 
                 if(GUILayout.Button("Clear Stars")) {
