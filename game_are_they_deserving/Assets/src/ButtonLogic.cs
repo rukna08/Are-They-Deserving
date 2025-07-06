@@ -10,6 +10,7 @@ public class ButtonLogic : MonoBehaviour {
     public GameObject trade_ui;
     public GameObject kill_button;
     public GameObject next_planet_button;
+    public GameObject current_planet;
 
     public void Start() {
         enable_planet_ui();
@@ -41,6 +42,8 @@ public class ButtonLogic : MonoBehaviour {
         kill_button.SetActive(false);
 
         next_planet_button.SetActive(false);
+
+        current_planet.SetActive(false);
     }
 
     public void enable_planet_ui() {
@@ -69,6 +72,8 @@ public class ButtonLogic : MonoBehaviour {
         kill_button.SetActive(true);
 
         next_planet_button.SetActive(true);
+
+        current_planet.SetActive(true);
     }
 
     public void enable_trade_ui() {
@@ -97,6 +102,8 @@ public class ButtonLogic : MonoBehaviour {
         kill_button.SetActive(false);
 
         next_planet_button.SetActive(false);
+
+        current_planet.SetActive(false);
     }
 
 }

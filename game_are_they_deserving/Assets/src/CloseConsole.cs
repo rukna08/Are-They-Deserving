@@ -12,6 +12,7 @@ public class CloseConsole : MonoBehaviour {
     public GameObject scroll;
     public GameObject hand;
     public GameObject reality;
+    public GameObject current_planet;
 
     public bool is_console_active;
 
@@ -36,6 +37,7 @@ public class CloseConsole : MonoBehaviour {
             hand.SetActive(false);
             reality.SetActive(true);
             is_console_active = false;
+            current_planet.SetActive(false);
         } else if (!is_console_active) {
             manuscript_ui.SetActive(true);
             planet_ui.SetActive(true);
@@ -44,6 +46,7 @@ public class CloseConsole : MonoBehaviour {
             hand.SetActive(true);
             reality.SetActive(false);
             is_console_active = true;
+            current_planet.SetActive(true);
         }
     }
 }
