@@ -1,6 +1,12 @@
 
 using UnityEngine;
 
+#if UNITY_EDITOR
+
+using UnityEditor;
+
+#endif
+
 public class StarGeneration : MonoBehaviour {
     
     public GameObject star;
@@ -36,10 +42,46 @@ public class StarGeneration : MonoBehaviour {
     }
 
     void kill_all_stars() {
-        for(int i = 0; i < transform.childCount; i++) {
-            Destroy(transform.GetChild(i).gameObject);
+        for (int i = transform.childCount - 1; i >= 0; i--) {
+            DestroyImmediate(transform.GetChild(i).gameObject);
         }
     }
+
+
+    #if UNITY_EDITOR
+
+        [CustomEditor(typeof(StarGeneration))]
+        public class StarGenerationEditor : Editor {
+            public override void OnInspectorGUI() {
+                base.OnInspectorGUI();
+
+                var instance = (StarGeneration)target;
+
+
+                EditorGUILayout.Space();
+                EditorGUILayout.Space();
+                EditorGUILayout.Space();
+
+                if(GUILayout.Button("Generate Stars")) {
+                    instance.kill_all_stars();
+                    instance.generate_stars();
+                }
+
+
+
+                if(GUILayout.Button("Generate More Stars")) {
+                    instance.generate_stars();
+                }
+
+
+
+                if(GUILayout.Button("Clear Stars")) {
+                    instance.kill_all_stars();
+                }
+            }
+        }
+
+    #endif
 
     
 }
