@@ -2041,6 +2041,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   credits: 0
+--- !u!1 &506319794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7525292308052360332, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
+  m_PrefabInstance: {fileID: 1266241456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &506319798 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
+  m_PrefabInstance: {fileID: 1266241456}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,7 +2292,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &554585957
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2671,6 +2681,7 @@ MonoBehaviour:
   trade_ui: {fileID: 353985320}
   kill_button: {fileID: 658016221}
   next_planet_button: {fileID: 649014296}
+  current_planet: {fileID: 506319794}
 --- !u!114 &649014299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2823,6 +2834,7 @@ MonoBehaviour:
   trade_ui: {fileID: 353985320}
   kill_button: {fileID: 658016221}
   next_planet_button: {fileID: 649014296}
+  current_planet: {fileID: 506319794}
 --- !u!114 &658016224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4798,6 +4810,7 @@ MonoBehaviour:
   trade_ui: {fileID: 353985320}
   kill_button: {fileID: 658016221}
   next_planet_button: {fileID: 649014296}
+  current_planet: {fileID: 506319794}
 --- !u!1 &1117131017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4876,31 +4889,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1633184826}
     m_Modifications:
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 310.5
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 310.5
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 62.1
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.37
+      value: 209.277
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.09
+      value: 67.689
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5589
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4908,15 +4921,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4660742395505316307, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4933,6 +4946,10 @@ PrefabInstance:
     - target: {fileID: 7525292308052360332, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
       propertyPath: m_Name
       value: Current Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525292308052360332, guid: 3c9e7f9d9b3d29a4a8b936f440aed481, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5093,7 +5110,8 @@ MonoBehaviour:
   scroll: {fileID: 253068110}
   hand: {fileID: 857931326}
   reality: {fileID: 1473049759}
-  is_console_active: 0
+  current_planet: {fileID: 506319794}
+  is_console_active: 1
   this_button_text: {fileID: 863403036}
 --- !u!1 &1410992562
 GameObject:
@@ -5805,6 +5823,7 @@ RectTransform:
   - {fileID: 353985321}
   - {fileID: 274196326}
   - {fileID: 253068111}
+  - {fileID: 506319798}
   m_Father: {fileID: 48125648}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6211,6 +6230,7 @@ MonoBehaviour:
   trade_ui: {fileID: 353985320}
   kill_button: {fileID: 658016221}
   next_planet_button: {fileID: 649014296}
+  current_planet: {fileID: 506319794}
 --- !u!1 &1755864354
 GameObject:
   m_ObjectHideFlags: 0
@@ -6625,6 +6645,7 @@ MonoBehaviour:
   trade_ui: {fileID: 353985320}
   kill_button: {fileID: 658016221}
   next_planet_button: {fileID: 649014296}
+  current_planet: {fileID: 506319794}
 --- !u!1 &1858852639
 GameObject:
   m_ObjectHideFlags: 0
@@ -7575,4 +7596,3 @@ SceneRoots:
   - {fileID: 857931328}
   - {fileID: 69368739}
   - {fileID: 900419467}
-  - {fileID: 1266241456}
