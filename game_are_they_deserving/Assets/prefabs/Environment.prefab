@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3579039415747519785}
   - component: {fileID: 2301225287118469500}
   - component: {fileID: 2448899479005576674}
+  - component: {fileID: -5411355741557795401}
   m_Layer: 0
   m_Name: Environment
   m_TagString: Untagged
@@ -105,3 +106,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-5411355741557795401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9121301680326606990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc540aaf2d51e049a8ea2b7e7b5e7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet_environment_material: {fileID: 0}
+  toxic_environment_color: {r: 0.1110305, g: 0.4245283, b: 0, a: 0.078431375}
+  oxygen_environment_color: {r: 0.16233535, g: 0.2908898, b: 0.6037736, a: 0.078431375}
+  radioactive_environment_color: {r: 0.96474135, g: 1, b: 0, a: 0.078431375}
